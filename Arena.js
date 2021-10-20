@@ -264,8 +264,10 @@ function chooseArena(){
         case "Namek":
         case "Nocturne":
         case "Jungle":
-        case "Ice_map":
             div.style.background = "url('./img-arene/" + choix.toLowerCase() + ".png')";
+            break;
+        case "Ice_map":
+            div.style.background = "url('./img-arene/" + choix.toLowerCase() + ".PNG')";
             break;
         default:
             console.log("nothing");
