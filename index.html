@@ -1,30 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleArena.css">
-    <title>Document</title>
-</head>
-<body>
-
-    <!-- Choix arene liste + division qui contient image arene -->
-        <h2>Choix de l'arène</h2>
-        <select name="maps" id="map-select" onchange="chooseArena()">
-            <option value="">Choose a map</option>
-            <option value="Namek">Namek</option>
-            <option value="Glaciale">Glaciale</option>
-            <option value="Jungle">Jungle</option>
-            <option value="Nocturne">Nocturne</option>
-        
-        </select>
-        <div id="imgarene" class="arena" >
-
-
-             
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styleArena.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="bloc_page">
+            <header>
+                <nav class="flex_row">
+                    <a href="#">CODED</a>
+                    <a href="#">BY</a>
+                    <a href="#">JM</a>
+                </nav>
+            </header>
+            <section class="flex_row">
+                <div id="img_arene">
+                    <h2>Choix de l'arène</h2>
+                    <select name="maps" id="map-select" onchange="chooseArena()">
+                        <option value="Choose">Choose a map</option>
+                        <option value="Namek">Namek</option>
+                        <option value="Ice_map">Ice_map</option>
+                        <option value="Jungle">Jungle</option>
+                        <option value="Nocturne">Nocturne</option>
+                    </select>
+                </div>
+                <div class="flex_column">
+                    <nav>
+                        <h1>Modification d'un personnage:</h1>
+                        <label for="make-perso-select">Choix du personnage:</label>
+                        <select name="make-perso-select" class="make-perso-select">
+                            <option value="Choisir un perso">Choisir un perso</option>                        
+                        </select>
+                        <p id="description_perso">No description available</p>
+                        <label for="attribut_perso">Changer attribut du perso:</label>
+                        <input type="text" id="input_attribut" placeholder="'pv': '100'|'name': 'Mon joli name'" />
+                        <button id="btnChangeAttr">Change</button>
+                    </nav>
+                    <nav>
+                        <h1>Choix du personnage:</h1>
+                        <label>Choix du personnage:</label>
+                        <select name="make-perso-select" class="make-perso-select">
+                            <option value="Choisir un perso">Choisir un perso</option>                        
+                        </select> <br>
+                        <label for="action_perso">Lancer une attaque:</label>
+                        <input type="text" id="action_perso" />
+                    </nav>
+                </div>
+            </section>
+            <div id="container_interaction" class="flex_row">
+                <nav>
+                    <h1>PERSO's CMD</h1>
+                    <h2>Bienvenue sur le log des combats !</h2>
+                    <p>> Attente d'un combat</p>
+                </nav>
+                <nav>
+                </nav>
+            </div>
         </div>
-
-    <script type="text/javascript" src="Arena.js"></script>
-</body>
+    <script type="text/javascript" src="./Arena.js"></script>
+    </body>
 </html>
