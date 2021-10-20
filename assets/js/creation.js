@@ -204,6 +204,34 @@ div6.appendChild(p6);
 
 
 
+
+
+var div6 = document.createElement("div");
+document.body.appendChild(div6);
+div6.setAttribute("id", "description-perso");
+
+var p1 = document.createElement("p");
+p1.id = "nom";
+var p2 = document.createElement("p");
+p2.id = "age";
+var p3 = document.createElement("p");
+p3.className = "type";
+var p4 = document.createElement("p");
+p4.className = "equip";
+var p5 = document.createElement("p");
+p5.className = "pouvoir";
+var p6 = document.createElement("p");
+p6.className = "pv";
+
+div6.appendChild(p1);
+div6.appendChild(p2);
+div6.appendChild(p3);
+div6.appendChild(p4);
+div6.appendChild(p5);
+div6.appendChild(p6);
+
+
+
 function ajoutcarte() {
   
    
@@ -216,4 +244,3 @@ function ajoutcarte() {
     p5.innerHTML = "<b>SKILL</b>: " + personnage.pouvoir;
     p6.innerHTML = "<b>PV</b>: " + personnage.pv;
 }
-
