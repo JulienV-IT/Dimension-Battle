@@ -1,0 +1,90 @@
+li{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+li ul{
+    color: aliceblue;
+    background-color: black;
+    border: solid purple 1px;
+    padding: 15px;
+}
+
+ul:hover{
+    cursor: pointer;
+}
+
+.arena{
+    border: solid black 1px;
+    width: 50%; height: 300px;
+    background-size: cover;
+
+}
+/* Debut code creation de perso */
+form{
+    margin-top: 10px;
+    border: solid black 1px;
+   width:50%;
+   text-align: center;
+   background:url("../img/img-arene/background-creation.jpg") center/cover no-repeat;
+   padding-bottom: 10px;
+
+}
+form div { 
+    margin-top : 10px;
+    
+}
+
+form div input, form div select{
+    margin:5px;
+    padding: 5px;
+    border-radius: 5px;
+    opacity: 0.8;
+
+}
+form div button{
+    padding: 10px;
+    border-radius: 90px;
+    
+}
+
+
+/* .carte-perso{
+    border:solid black 1px;
+    height: 450px;
+    width: 10%;
+    margin-top: 10px;
+}
+
+.image-perso{
+    border:solid black 1px;
+    height: 50%;
+    width: 90%;
+    margin: 5px auto;
+    
+} */
+
+#description-perso{
+    transform: scale(0);
+    border:solid 1px black;
+    display: flex;
+    flex-flow: row wrap;
+    width: 30%;
+    text-align: center;
+    background-color: yellow;
+    margin-top:5px;
+   
+    
+}
+#description-perso p{
+    border: solid 1px black;
+    width: 40%;
+    margin:5px auto;
+    color:white;
+    background-color: black;
+    border-radius: 5px;
+}
+#description-perso p b{
+    color:red;
+}

@@ -25,18 +25,18 @@ switch (choix) {
     // La case "Namek" que l'on retrouve dans le html dans les cases option est associé à l'url d'une image afin que celle ci soit chargée dans la div qui a pour id imgarena
 
     case "namek":
-        div.style.backgroundImage = "url('img-arene/namek.png')";
+        div.style.backgroundImage = "url('./assets/img/img-arene/namek.png')";
         break;
     case "glaciale":
-        div.style.backgroundImage = "url('img-arene/ice_map.PNG')";
+        div.style.backgroundImage = "url('./assets/img/img-arene/ice_map.PNG')";
         break;
 
     case "jungle":
-        div.style.backgroundImage = "url('img-arene/map_jungle.PNG')";
+        div.style.backgroundImage = "url('./assets/img/img-arene/map_jungle.PNG')";
         break;
 
     case "nocturne":
-        div.style.backgroundImage = "url('img-arene/nuit.png')";
+        div.style.backgroundImage = "url('./assets/img/img-arene/nuit.png')";
         break;
 
     default:

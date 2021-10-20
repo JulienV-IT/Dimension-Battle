@@ -16,26 +16,24 @@ _Notre jeux doit disposer d'un espace qui affiche quelques éléments de context
 
 **Michel Pierre**
 
-* un lieux (quelques choix)
+* un lieux (quelques choix) OK
 
 **Akin**
 
-* une entrée utilisateurs pour donner des précisions sur l'action en cours
+* une entrée utilisateurs pour donner des précisions sur l'action en cours En cour
 
-****
+
+
+**Grégor Emillie** en cour
 * ajout des joueurs
-
-**Grégor**
-
 * une liste de joueur participants avec le moyen d'être prêt a la joute
 
 _Les intèractions seront l'enjeux de notre battle, il devront avoir un espace significatif dans notre petit jeux_
 
-**Ali** (html)
+**Ali** (html) en cours
 
 * Une partie du site dédier a l'affichage des joutes
 
 * Une entrée utilisateurs avec récéption/defense et envoie/attaque pour envoyer dans nos joutes ou alors pour envoyer des petits coeurs si vous etes une licorne  (optionnel pour aujourdhui )
 
 * un affichage des pv et des interactions avec !
-
