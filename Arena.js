@@ -272,19 +272,3 @@ function chooseArena(){
     }
     div.style.backgroundSize = "100%";
 }
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-// if arena.value = choix
