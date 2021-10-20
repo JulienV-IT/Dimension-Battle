@@ -1,18 +1,8 @@
-li{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-}
+.arena{
+    border: solid black 1px;
+    width: 50%; height: 300px;
 
-li ul{
-    color: aliceblue;
-    background-color: black;
-    border: solid purple 1px;
-    padding: 15px;
-}
 
-ul:hover{
-    cursor: pointer;
 }
 
 .arena{
@@ -31,9 +21,20 @@ form{
    padding-bottom: 10px;
 
 }
-form div { 
+
+#formInteract{
+    margin-top: 10px;
+    border: solid black 1px;
+    width:50%;
+    text-align: center;
+    background:url("../img/img-arene/drakkar.jpg") center/cover no-repeat;
+    padding-bottom: 10px;
+
+}
+
+form div {
     margin-top : 10px;
-    
+
 }
 
 form div input, form div select{
@@ -41,12 +42,21 @@ form div input, form div select{
     padding: 5px;
     border-radius: 5px;
     opacity: 0.8;
-
 }
+
 form div button{
     padding: 10px;
     border-radius: 90px;
-    
+}
+
+/* Liste de personnage */
+#characterList{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../img/img-arene/background-affichage-perso.jpg") ;
+    background-size: cover;
+    text-align: right;
+    width: 20%;
+    height: 300px;
+    overflow: auto;
 }
 
 
@@ -73,3 +83,13 @@ form div button{
 #description-perso p b{
     color:red;
 }
+
+#characterList ul{
+    list-style: none;
+    margin: 10px 0px;
+}
+
+#characterList > ul{
+    margin: 20px 15px;
+}
+

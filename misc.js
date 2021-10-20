@@ -1,0 +1,3 @@
+function changeArena(){
+    alert("test");
+};
