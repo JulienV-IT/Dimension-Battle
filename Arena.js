@@ -174,7 +174,7 @@ function    changeAttribut(perso){
     
     /* regex qui prendra pour séparateur ici
         - le simple quote
-        - la virgule
+        - le pipe |
         Mais comme je connais pas trop le regex j'ai
             ajouté une fonction qui va supprimer
                 les string vides ou inutiles
