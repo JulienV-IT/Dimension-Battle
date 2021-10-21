@@ -165,13 +165,20 @@ class Personnage {
 
 const persoFull = [];
 
+var div4 = document.createElement("div");
+document.body.appendChild(div4);
+div4.setAttribute("id","carte-perso");
 
-// var div5 = document.createElement("div");
-// document.body.appendChild(div5);
-// div5.setAttribute("id", "carte-perso");
+ var div5 = document.createElement("div");
+ div4.appendChild(div5);
+ div5.setAttribute("id", "image-perso");
+
+var image1 = document.createElement("img");
+div5.appendChild(image1);
+image1.setAttribute("width","210px");
 
 var div6 = document.createElement("div");
-document.body.appendChild(div6);
+div4.appendChild(div6);
 div6.setAttribute("id", "description-perso");
 
 var p1 = document.createElement("p");
@@ -198,44 +205,8 @@ div6.appendChild(p6);
 
 
 
-var div6 = document.createElement("div");
-document.body.appendChild(div6);
-div6.setAttribute("id", "description-perso");
-
-var p1 = document.createElement("p");
-p1.id = "nom";
-var p2 = document.createElement("p");
-p2.id = "age";
-var p3 = document.createElement("p");
-p3.className = "type";
-var p4 = document.createElement("p");
-p4.className = "equip";
-var p5 = document.createElement("p");
-p5.className = "pouvoir";
-var p6 = document.createElement("p");
-p6.className = "pv";
-
-div6.appendChild(p1);
-div6.appendChild(p2);
-div6.appendChild(p3);
-div6.appendChild(p4);
-div6.appendChild(p5);
-div6.appendChild(p6);
 
 
-
-function ajoutcarte() {
-
-
-    var carte = document.getElementById("description-perso");
-    carte.style.transform = "scale(1)";
-    p1.innerHTML = "<b>NOM:</b> " + personnage.nom;
-    p2.innerHTML = "<b>AGE</b>: " + personnage.age;
-    p3.innerHTML = "<b>TYPE</b>: " + personnage.race;
-    p4.innerHTML = "<b>ARME</b>: " + personnage.arme;
-    p5.innerHTML = "<b>SKILL</b>: " + personnage.pouvoir;
-    p6.innerHTML = "<b>PV</b>: " + personnage.pv;
-}
 
 function ajouter() {
 
@@ -261,15 +232,37 @@ function ajouter() {
 
 
     persoFull.push(personnage);
-    console.log(persoFull);
+   
+    console.log(persoFull)
     
     ajoutcarte();
 };
 
 
+function ajoutcarte() {
+    if(persoFull[(persoFull.length)-1].race=="Demon"){
+        image1.setAttribute("src","./assets/img/img-perso/demon.png");
+    }
+    else if(persoFull[(persoFull.length)-1].race=="Necromancer"){
+        image1.setAttribute("src","./assets/img/img-perso/necromancer.png");
+    }
+    else if(persoFull[(persoFull.length)-1].race=="Knight"){
+        image1.setAttribute("src","./assets/img/img-perso/knight.png");
+    }
+    else if(persoFull[(persoFull.length)-1].race=="Mage"){
+        image1.setAttribute("src","./assets/img/img-perso/mage.png");
+    }
+    
+    var carte = document.getElementById("carte-perso");
+    carte.style.display="block";
+    p1.innerHTML = "<b>NOM:</b> " + persoFull[(persoFull.length)-1].nom;
+    p2.innerHTML = "<b>AGE</b>: " + persoFull[(persoFull.length)-1].age;
+    p3.innerHTML = "<b>TYPE</b>: " + persoFull[(persoFull.length)-1].race;
+    p4.innerHTML = "<b>ARME</b>: " + persoFull[(persoFull.length)-1].arme;
+    p5.innerHTML = "<b>SKILL</b>: " + persoFull[(persoFull.length)-1].pouvoir;
+    p6.innerHTML = "<b>PV</b>: " + persoFull[(persoFull.length)-1].pv;
 
-
-
+};
 
 //
 
@@ -390,34 +383,4 @@ btnPunch.setAttribute("type", "button");
 btnPunch.setAttribute("onclick", "getAction()");
 
 div3Interact.appendChild(btnPunch);
-
-// class Interact {
-//   constructor(atk,def,all,cible,user){
-//     this.atk =  atk();
-//     this.def =  def();
-//     this.all =  all();
-//     this.cible = persoFull.personnage[x].name;
-//     this.user = persoFull.personnage[x].name;
-//     alert(this.cible);
-//     alert(this.user);
-//   }
-//
-//   atk(x){
-//     var charge = x;
-//     alert(charge);
-//   }
-//
-//   def(x){
-//     var contre = x;
-//     alert(contre);
-//   }
-//
-//   all(x){
-//     var heart = x;
-//     alert(heart);
-//   }
-// }
-//
-//
-// var ready = new Interact(atk(5));
 

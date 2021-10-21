@@ -59,13 +59,19 @@ form div button{
     overflow: auto;
 }
 
-
+#carte-perso{
+    display: none;
+    border: solid black 1px;
+    width: 10%;
+}
+#image-perso{
+    width: 100%;
+}
 #description-perso{
-    transform: scale(0);
     border:solid 1px black;
     display: flex;
-    flex-flow: row wrap;
-    width: 30%;
+    flex-flow: row wrap;  
+   
     text-align: center;
     background-color: yellow;
     margin-top:5px;
