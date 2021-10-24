@@ -59,6 +59,37 @@ form div button{
     overflow: auto;
 }
 
+#carte-perso{
+    display: none;
+    border: solid black 1px;
+    width: 10%;
+}
+#image-perso{
+    width: 100%;
+}
+#description-perso{
+    border:solid 1px black;
+    display: flex;
+    flex-flow: row wrap;  
+   
+    text-align: center;
+    background-color: yellow;
+    margin-top:5px;
+   
+    
+}
+#description-perso p{
+    border: solid 1px black;
+    width: 40%;
+    margin:5px auto;
+    color:white;
+    background-color: black;
+    border-radius: 5px;
+}
+#description-perso p b{
+    color:red;
+}
+
 #characterList ul{
     list-style: none;
     margin: 10px 0px;
@@ -67,3 +98,4 @@ form div button{
 #characterList > ul{
     margin: 20px 15px;
 }
+
